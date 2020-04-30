@@ -2,22 +2,22 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let Order = new Schema({
-    order_items: {
+    items: {
         type: Array
     },
-    order_subtotal: {
+    subtotal: {
         type: Number
     },
-    order_name: {
+    name: {
         type: String
     },
-    order_phone: {
+    phone: {
         type: String
     },
-    order_email: {
+    email: {
         type: String
     },
-    order_done: {
+    done: {
         type: Boolean
     }
 }, {

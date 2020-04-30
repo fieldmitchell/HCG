@@ -2,28 +2,28 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let Item = new Schema({
-    item_title: {
+    title: {
         type: String
     },
-    item_category: {
+    category: {
         type: String
     },
-    item_subcategory: {
+    subcategory: {
         type: String
     },
-    item_price: {
+    price: {
         type: Number
     },
-    item_quantity: {
+    quantity: {
         type: Number
     },
-    item_color: {
+    color: {
         type: Number
     },
-    item_about: {
+    about: {
         type: String
     },
-    item_stock: {
+    stock: {
         type: Boolean
     }
 });

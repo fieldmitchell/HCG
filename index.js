@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const PORT = 4000;
+//const MongoClient = require('mongodb').MongoClient;
 
 require('dotenv').config();
 
@@ -17,7 +18,7 @@ app.use(bodyParser.json());
 const uri = process.env.ATLAS_URI;
 
 //connecting to local host 
-mongoose.connect(uri, { useNewUrlParser: true });
+mongoose.connect(uri, { useNewUrlParser: true })
 
 //connects to mongodb
 mongoose.connection.on('error', console.error.bind(console, 'connection error:'))
