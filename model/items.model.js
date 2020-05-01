@@ -1,31 +1,31 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-let Item = new Schema({
-    title: {
+let Items = new Schema({
+    item_title: {
         type: String
     },
-    category: {
+    item_category: {
         type: String
     },
-    subcategory: {
+    item_subcategory: {
         type: String
     },
-    price: {
+    item_price: {
         type: Number
     },
-    quantity: {
+    item_quantity: {
         type: Number
     },
-    color: {
-        type: Number
+    item_colors: {
+        type: Array
     },
-    about: {
+    item_about: {
         type: String
     },
-    stock: {
+    item_stock: {
         type: Boolean
     }
 });
 
-module.exports = mongoose.model('Item', Item);
+module.exports = mongoose.model('Items', Items);
