@@ -21,7 +21,6 @@ module.exports = (model) => {
   })
   //insert one item
   router.post('/', async (req, res, next) => {
-    console.log(req.body)
     try{
       const instance = new model(req.body)
       await instance.save()
